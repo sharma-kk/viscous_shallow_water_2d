@@ -1,0 +1,44 @@
+########geo_balance_mesh_128.py#########
+Running on 4 cores.
+mesh res. 1/128 ;Dt =0.01
+10 degrees to 80 degrees.
+Testing whether the flow can sustain Geo balance till t = 120 h.
+Inviscid flow conditions.
+Monitoring u_init - u_t (and height) over time.
+
+#############baro_inst_Re_6e3_mesh_128.py#######
+Running on 4 cores
+Nx = 448
+Ny = 128
+Dt =0.01 ;Re = 6*10**3; Pe = 6*10**3
+Running till t = 144 hours / 6days. 
+
+#############baro_inst_Re_6e5_mesh_256.py#######
+Running on 8 cores
+Nx = 2*448
+Ny = 2*128 
+Dt =0.005 ; Re = 6*10**5; Pe = 6*10**5
+Running till t = 144 hours / 6 days. 
+
+#############baro_inst_Re_3e5_mesh_256_model1.py#######
+Running on 16 cores
+Nx = 7*256
+Ny = 256 
+Dt =0.005 ; Re = 3*10**5; Pe = 3*10**5
+Running till t = 30 days. 
+Saving .pvd every 5 day.
+pvd file: baro_inst_mesh_256_model_1.pvd
+Estimated run time: 2400 min.
+The test somehow got abrupted. 
+I am running the model again. I am also saving .h5 files.
+
+.......................................
+
+############init_adjustment_Re_6e5_mesh_256_model2.py####
+Running on 8 cores
+Nx = 2*448
+Ny = 2*128 
+Dt =0.005 ; Re = 6*10**5; Pe = 6*10**5
+Running till t = 6 hours 
+Saving .pvd every 2 hours.
+pvd file: init_adj_mesh_256_model_2.pvd
