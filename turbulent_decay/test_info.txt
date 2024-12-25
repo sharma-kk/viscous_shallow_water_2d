@@ -1,0 +1,7 @@
+#############baro_inst_Re_3e5_mesh_256.py#######
+Running on 16 cores
+Nx = 7*256
+Ny = 256 
+Dt =0.005 ; Re = 3*10**5; Pe = 3*10**5
+Running till t = 30 days. 
+Saving .pvd every 5 day.
